@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Abayomi Odusanya — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    :root { --bg:#0b1220; --card:#111a2b; --text:#e8eefc; --muted:#a9b3c9; --accent:#7aa2f7; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
+    .wrap{max-width:960px;margin:0 auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between;margin:12px 0 28px}
+    .brand{font-size:1.4rem;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    nav a:hover{color:var(--text)}
+    .hero{background:linear-gradient(180deg,#0e1830,transparent);border-radius:16px;padding:32px}
+    h1{margin:0 0 8px;font-size:2rem}
+    .subtitle{color:var(--muted)}
+    .grid{display:grid;gap:16px}
+    @media(min-width:720px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card);border:1px solid #1a2842;border-radius:16px;padding:16px}
+    .card h3{margin:0 0 8px}
+    .tag{display:inline-block;border:1px solid #2a3b63;border-radius:999px;padding:4px 10px;margin:4px 6px 0 0;color:var(--muted);font-size:.85rem}
+    .footer{color:#8da2c6;margin:32px 0;text-align:center}
+    a.btn{display:inline-block;background:var(--accent);color:#081120;text-decoration:none;font-weight:700;border-radius:10px;padding:10px 14px;margin-top:12px}
+    a.link{color:var(--accent);text-decoration:none}
+    section{margin:28px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Abayomi Odusanya</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Cloud & DevOps (Azure) — Portfolio</h1>
+      <p class="subtitle">I’m a Cloud Support Engineer learning DevOps: Azure, Linux, networking, automation, and CI/CD. I love deploying things that actually work.</p>
+      <a class="btn" href="#projects">See my projects</a>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="card">
+        <p>
+          I’m Abayomi Odusanya — an Azure-focused Cloud Support Engineer growing into DevOps.
+          I work with VMs, NGINX/IIS, networking, IaC basics, and troubleshooting.
+          Currently building hands-on projects and learning CI/CD with Azure Pipelines/GitHub Actions.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <span class="tag">Azure</span>
+        <span class="tag">Linux (Ubuntu)</span>
+        <span class="tag">Windows Server</span>
+        <span class="tag">NGINX / IIS</span>
+        <span class="tag">Git / Azure Repos / GitHub</span>
+        <span class="tag">Networking / NSGs</span>
+        <span class="tag">Bash / PowerShell</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>HNG Stage 0 — NGINX on Azure</h3>
+          <p>Deployed a public web server on Azure Ubuntu with a custom index.html over port 80.</p>
+          <p><a class="link" href="http://4.233.129.23/" target="_blank">Live demo</a> • <a class="link" href="https://github.com/YOUR-USERNAME/hng13-stage0-devops" target="_blank">Source</a></p>
+        </div>
+        <div class="card">
+          <h3>Windows Server — IIS on Azure</h3>
+          <p>Served a custom landing page from <code>C:\inetpub\wwwroot\index.html</code> over port 80.</p>
+          <p><a class="link" href="http://YOUR-WINDOWS-IP/" target="_blank">Live demo</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a class="link" href="mailto:youremail@example.com">yommieodusanya@gmail.com</a></p>
+        <p>LinkedIn: <a class="link" target="_blank" href="https://www.linkedin.com/in/YOUR-LINKEDIN">linkedin.com/in/abayomi-odusanya/</a></p>
+        <p>GitHub: <a class="link" target="_blank" href="https://github.com/YOUR-USERNAME">github.com/abayomieodusanya</a></p>
+      </div>
+    </section>
+
+    <div class="footer">© <span id="y"></span> Abayomi Odusanya</div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
